@@ -1,0 +1,245 @@
+@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);
+/*CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: logo and image */
+#logo{
+    margin: 12px 34px;
+
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 59px;
+
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Balthazar', serif;
+    font-size: 3.0rem;
+}
+
+#navbar::before{
+    content: "";
+    background-color: brown(222, 184, 135, 0.445);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+
+#navbar ul li{
+    /* color: white; */
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none ;
+    color: rgb(30, 2, 51);
+    font-size: 1.6rem;
+}
+#navbar ul li a:hover{
+    color:brown;
+    background-color: rgb(235, 196, 196);
+    
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 493px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('https://images.mygoodtimes.in/wp-content/uploads/2019/08/29104300/global-food-main.jpg');
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5; 
+    top: 0px;
+    left: 0px;  
+}
+#home h1{
+    color: rgba(20, 7, 7, 0.596);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+    background: url(coffee-g809ecf26f_1920.jpg);
+    
+}
+
+#services .box{
+    border: 2px solid brown;
+    border-radius: 23px;
+    padding: 50px;
+    margin: 26px 25px;
+    
+    margin-bottom: 20px;
+    background: #f2f2f2;
+    
+}
+
+#services .box img{
+   height: 156px;
+   
+   margin: auto;
+   display: block;
+   
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+#services{
+    
+}
+#services{
+    
+}
+
+/* Client Section*/
+   #client-section{
+       position: relative;
+     height: 344px;
+   }
+   #client-section::before{
+       content: "";
+       position: absolute;
+       background: url(pizza-gd4edab0b1_1920.jpg);
+       width: 100%;
+       height: 100%;
+       z-index: -1;
+       opacity: 0.4;
+   }
+   #clients{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .client-item{
+       padding: 34px;
+   }
+   #clients img{
+    height: 125px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(handshake-g6f16cac02_1920.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:'Bree Serif', serif ;
+}
+#footer{
+    background: black;
+    color: white;
+    padding: 15px 28px;
+}
+/* Utility class */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 11px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 8px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px 17px;
+    font-size: 1.5rem;
+    border-radius: 10px
+    
+}
+.btn{
+    cursor: pointer;
+}
+.btn1{
+    width: 100%;
+    height: 120%;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
